@@ -1,0 +1,11 @@
+{
+  "name": "strym-framework",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+  },
+  "dependencies": {
+    "nodeunit": "^0.9.1"
+  },
+  "devDependencies": {}
+}

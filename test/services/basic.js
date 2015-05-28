@@ -1,0 +1,10 @@
+var util        = require('util');
+
+var Service     = require('./../../lib/service');
+
+
+var BasicService = module.exports = function BasicService() {
+    this.id = 'basicService';
+};
+
+util.inherits(BasicService, Service);
