@@ -1,3 +1,5 @@
+'use strict';
+
 var Container = require('./lib/container');
 
 module.exports = {

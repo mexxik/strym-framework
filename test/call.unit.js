@@ -1,6 +1,6 @@
 var framework               = require('./../framework');
 
-var BasicConnector          = require('./../lib/connectors/basic');
+var InternalConnector          = require('./../lib/connectors/internal');
 
 var SenderService           = require('./services/sender');
 var ReceiverService         = require('./services/receiver');
@@ -9,8 +9,8 @@ exports.group = {
     setUp: function(callback) {
         this.container = framework.createContainer(__dirname + '/config/basic.json');
 
-        var basicConnector = new BasicConnector();
-        this.container.registerConnector(basicConnector);
+        var internalConnector = new InternalConnector();
+        this.container.registerConnector(internalConnector);
 
         this.sender = new SenderService();
         this.receiver = new ReceiverService();
