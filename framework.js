@@ -6,8 +6,8 @@ var Container   = require('./lib/container');
 var Service     = require('./lib/service');
 
 module.exports = {
-    createContainer: function(configPath) {
-        var container = new Container(configPath);
+    createContainer: function(propertiesPath) {
+        var container = new Container(propertiesPath);
         return container;
     },
     inheritService: function(childService) {

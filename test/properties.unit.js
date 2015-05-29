@@ -9,7 +9,7 @@ exports.testEmptyConfig = function(test) {
 
 exports.group = {
     setUp: function(callback) {
-        this.container = framework.createContainer(__dirname + '/config/basic.json');
+        this.container = framework.createContainer(__dirname + '/properties.json');
         this.service = new BasicService();
         this.container.registerService(this.service);
         this.container.start();

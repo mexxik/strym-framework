@@ -7,7 +7,7 @@ var ReceiverService         = require('./services/receiver');
 
 exports.group = {
     setUp: function(callback) {
-        this.container = framework.createContainer(__dirname + '/config/basic.json');
+        this.container = framework.createContainer(__dirname + '/config/properties.json');
 
         var internalConnector = new InternalConnector();
         this.container.registerConnector(internalConnector);
