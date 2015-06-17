@@ -4,7 +4,7 @@ var Service     = require('./../../lib/service');
 
 
 var SenderService = module.exports = function SenderService() {
-    this.id = 'senderService';
+    this.name = 'senderService';
 };
 
 util.inherits(SenderService, Service);

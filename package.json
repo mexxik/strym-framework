@@ -2,9 +2,9 @@
   "name": "@mexxik/strym-framework",
   "version": "0.0.3",
   "private": false,
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
+    "node-uuid": "^1.4.3",
     "nodeunit": "^0.9.1"
   },
   "devDependencies": {}
