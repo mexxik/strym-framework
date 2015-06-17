@@ -1,6 +1,6 @@
 var framework               = require('./../framework');
 
-var InternalConnector          = require('./../lib/connectors/internal');
+var InternalConnector       = require('./../lib/connectors/internal');
 
 var SenderService           = require('./services/sender');
 var ReceiverService         = require('./services/receiver');

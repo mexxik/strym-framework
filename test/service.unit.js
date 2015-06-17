@@ -2,7 +2,7 @@ var framework               = require('./../framework');
 
 var BasicService           = require('./services/basic');
 
-exports.testContainerStarted = function(test) {
+exports.testServicesStarted = function(test) {
     this.container = framework.createContainer();
 
     this.service = new BasicService();
