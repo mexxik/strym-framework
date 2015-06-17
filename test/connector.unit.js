@@ -8,7 +8,7 @@ exports.testConnectorsStarted = function(test) {
     this.connector = new InternalConnector();
     this.container.registerConnector(this.connector);
 
-    this.container.on('containerStarted', function() {
+    this.container.on('started', function() {
         test.done();
     });
 
