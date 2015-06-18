@@ -9,6 +9,10 @@ var ReceiverService = module.exports = function ReceiverService() {
 
 util.inherits(ReceiverService, Service);
 
+ReceiverService.prototype.start = function(callback) {
+    callback();
+};
+
 ReceiverService.prototype.postRegister = function(dispatcher) {
     this.registerCall('registeredCall', function(params, callback) {
         callback(params);

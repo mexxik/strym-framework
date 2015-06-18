@@ -9,6 +9,10 @@ var SenderService = module.exports = function SenderService() {
 
 util.inherits(SenderService, Service);
 
+SenderService.prototype.start = function(callback) {
+    callback();
+};
+
 SenderService.prototype.sendRegisteredCall = function(params, callback) {
     this.call('registeredCall', params, null, function(response) {
         callback(response);
