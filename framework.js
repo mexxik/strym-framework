@@ -3,7 +3,7 @@
 var util        = require('util');
 
 var Container   = require('./lib/container');
-var Service     = require('./lib/service');
+var Service     = require('./lib/basic/service');
 
 module.exports = {
     createContainer: function(propertiesPath) {

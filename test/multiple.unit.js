@@ -24,7 +24,7 @@ exports.group = {
         this.container.start();
     },
     tearDown: function(callback) {
-        this.container.stop();
+        var a = 1;
     },
     testRegisteredCall: function(test) {
         var random = Math.random();
@@ -35,12 +35,12 @@ exports.group = {
         });
 
     }/*,
-    testPrototypeCall: function(test) {
-        var random = Math.random();
+     testPrototypeCall: function(test) {
+     var random = Math.random();
 
-        this.sender.sendPrototypeCall(random, function(response) {
-            test.equals(response, random);
-            test.done();
-        });
-    }*/
+     this.sender.sendPrototypeCall(random, function(response) {
+     test.equals(response, random);
+     test.done();
+     });
+     }*/
 };

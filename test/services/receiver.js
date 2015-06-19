@@ -1,6 +1,6 @@
 var util        = require('util');
 
-var Service     = require('./../../lib/service');
+var Service     = require('./../../lib/basic/service');
 
 
 var ReceiverService = module.exports = function ReceiverService() {
