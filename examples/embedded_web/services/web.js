@@ -1,7 +1,4 @@
-var http        = require('http');
-
 var framework   = require('./../../../framework');
-
 
 var WebService = module.exports = function HttpService() {
 

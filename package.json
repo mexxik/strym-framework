@@ -6,7 +6,8 @@
   "dependencies": {
     "amqp": "^0.2.4",
     "node-uuid": "^1.4.3",
-    "nodeunit": "^0.9.1"
+    "nodeunit": "^0.9.1",
+    "socket.io": "^1.3.5"
   },
   "devDependencies": {}
 }
