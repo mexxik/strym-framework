@@ -1,6 +1,6 @@
 {
-  "name": "@mexxik/strym-framework",
-  "version": "0.0.3",
+  "name": "strym-framework",
+  "version": "0.0.4",
   "private": false,
   "scripts": {},
   "dependencies": {

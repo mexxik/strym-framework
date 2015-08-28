@@ -10,5 +10,5 @@ var RandomService = module.exports = function RandomService() {
 framework.inheritService(RandomService);
 
 RandomService.prototype.getRandomNumber = function(params, callback) {
-    callback(Math.random());
+    callback('hello world!');
 };
