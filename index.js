@@ -16,12 +16,12 @@ module.exports = {
         util.inherits(childService, Service);
     },
     InternalConnector: function() {
-        return InternalConnector;
+        return new InternalConnector();
     },
     AMQPConnector: function() {
-        return AMQPConnector;
+        return new AMQPConnector();
     },
     SocketConnector: function() {
-        return SocketConnector;
+        return new SocketConnector();
     }
 };
