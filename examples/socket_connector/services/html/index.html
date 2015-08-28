@@ -13,7 +13,7 @@
             window.sf = new Connector();
 
             $('#retrieve_button').click(function() {
-                window.sf.call('getRandomNumber', {}, {}, function(response) {
+                window.sf.rpc('getRandomNumber', {}, {}, function(response) {
                     $('#retrieve_label').text(response);
                 });
             });

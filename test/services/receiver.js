@@ -14,11 +14,11 @@ ReceiverService.prototype.start = function(callback) {
 };
 
 ReceiverService.prototype.postRegister = function(dispatcher) {
-    this.registerCall('registeredCall', function(params, callback) {
+    this.registerRPC('registeredRPC', function(params, callback) {
         callback(params);
     });
 };
 
-ReceiverService.prototype.prototypeCall = function(params, callback) {
+ReceiverService.prototype.prototypeRPC = function(params, callback) {
     callback(params);
 };

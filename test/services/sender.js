@@ -14,13 +14,13 @@ SenderService.prototype.start = function(callback) {
 };
 
 SenderService.prototype.sendRegisteredCall = function(params, callback) {
-    this.call('registeredCall', params, null, function(response) {
+    this.rpc('registeredRPC', params, null, function(response) {
         callback(response);
     });
 };
 
 SenderService.prototype.sendPrototypeCall = function(params, callback) {
-    this.call('prototypeCall', params, null, function(response) {
+    this.rpc('prototypeRPC', params, null, function(response) {
         callback(response);
     });
 };

@@ -13,7 +13,7 @@ HttpService.prototype.postRegister = function(dispatcher) {
     var self = this;
 
     http.createServer(function(req, res) {
-        self.call('getRandomNumber', null, null, function(response) {
+        self.rpc('getRandomNumber', null, null, function(response) {
             res.writeHead(200, {'Content-Type': 'text/plain'});
             res.end(response + '\n');
         });
