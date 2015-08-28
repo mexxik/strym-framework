@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Socket Generator</title>
+
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/sf/connector.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            console.log('safasdf');
+
+            window.sf = new Connector();
+
+            window.sf.registerRPC('valueGenerated', function(data) {
+                $('#generated_label').text(data.value);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <p>hello</p>
+    <p>
+        generated value: <label id="generated_label"></label>
+    </p>
+
+
+</body>
+</html>
